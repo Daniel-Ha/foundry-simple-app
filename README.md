@@ -1,66 +1,14 @@
-## Foundry
+## FundMe
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+**This smart contract application supports simple crowd sourcing.**
 
-Foundry consists of:
+# About
+This app was made using Foundry following an online course teaching smart contract development.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
-```
-
-### Test
-
-```shell
-$ forge test
-```
-
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+# Usage
+To deploy for testing on the Sepolia chain, create a .env file and add your:
+    SEPOLIA_RPC_URL
+    PRIVATE_KEY
+    and
+    ETHERSCAN_API_KEY
+Then, simply run in terminal: ```make deploy-sepolia ```
