@@ -7,8 +7,8 @@ This app was made using Foundry following an online course teaching smart contra
 
 # Usage
 To deploy for testing on the Sepolia chain, create a .env file and add your:
-    SEPOLIA_RPC_URL
-    PRIVATE_KEY
+    SEPOLIA_RPC_URL,
+    PRIVATE_KEY,
     and
-    ETHERSCAN_API_KEY
+    ETHERSCAN_API_KEY.
 Then, simply run in terminal: ```make deploy-sepolia ```
